@@ -1,17 +1,46 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+  <Card>
+    <Image :src="mainImage"/>
+    <Title>Fashion</Title>
+    <Text>
+Fashion is populaar especially in clothing , footwear, lifestyle, accessories, makeup, hairstyle and body.
+    </Text>
+    <BottomRow>
+      <AuthorImage :src="authorImage"/>
+      <Author>Bob</Author>
+      <MdHeartEmptyIcon w="70px" h="70px"/>
+      <IconText>340</IconText>
+      <IconText>340</IconText>
+
+    </BottomRow>
+  </Card>  
   </div>
 </template>
 
+
 <script>
-import HelloWorld from "./components/HelloWorld";
+import styled from 'vue-styled-components';
+import MdHeartEmptyIcon from 'vue-ionicons/dist/md-heart-empty.vue'
+    
+const Card = styled.div`
+
+`;
+
 
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  }
+  
+components:{
+  Card,
+  MdHeartEmptyIcon,
+  
+},
+data(){
+return{
+mainImage:require('@assets/')
+}
+}
 };
 </script>
 
