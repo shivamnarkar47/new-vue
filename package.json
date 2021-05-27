@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "@vue/cli-plugin-babel": "4.1.1",
-    "ionicons": "5.5.1",
+    "material-design-icons": "3.0.1",
     "vue": "^2.6.11",
-    "vue-ionicons": "3.0.5",
     "vue-styled-components": "1.6.0"
   },
   "devDependencies": {
